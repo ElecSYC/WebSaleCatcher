@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "887417252483",
+    "project_id": "websalescatcher",
+    "storage_bucket": "websalescatcher.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887417252483:android:e23319ae348da97f14c9b6",
+        "android_client_info": {
+          "package_name": "com.example.websalecatcher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887417252483-klnelem2qse1ek05krdhhks25s64a929.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB3sTis94ns_qa_UokJU3s6xq6xHRLWmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887417252483-klnelem2qse1ek05krdhhks25s64a929.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

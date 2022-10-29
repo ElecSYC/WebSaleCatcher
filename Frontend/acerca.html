@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSaleCatcher</title>
+    <link rel = "icon" href ="C:\Users\joses\OneDrive\Documentos\Electron500\Programacion\Proyectos\WebSaleCatcher\Frontend\media\appicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src=""></script>
+    <link rel="stylesheet" href="css/acerca.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container__header">	
+            <div class="logo">WebSaleCatcher</div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="acerca.html">Acerca de</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <i class="fa-solid fa-bars" id="icon_menu"></i>
+            <div class="header__login">
+                <input type="button" class="btn__header-login" value="Iniciar Sesion" data-bs-toggle="modal" data-bs-target="#loginModal">
+            </div>
+            <div class="header__register">
+                <input type="button" class="btn__header-register" value="Registrarse" data-bs-toggle="modal" data-bs-target="#signinModal">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cover">
+            
+            <div class="text__information-cover">
+                <h1>Comienza tu busqueda ¡Ahora mismo!</h1>
+                <p>WebSaleCatcher es un programa especializado en ScrapingWeb donde a traves del uso de informacion publica de paginas tipo "Ecommerce" categorizamos y facilitamos tu busque de productos en linea.</p>
+                <p>Para informacion adicional, no olvides contactar con nuestro asistente virtual "Santiago" como tambien para preguntas frecuentes; asi mismo si deseas puedes contactar directamente con nuestro equipo y haremos todo lo posible por comunicarnos contio.</p>
+            </div>
+            <div class="media__cover">
+                <video src="media/animacion_cover.webm" autoplay playinline loop muted preload="auto"></video>
+            </div>
+        </div><br>
+        <div class="carrousel">
+            <div class="slides">
+                <div id="slide-1">
+                    <img src="C:\Users\joses\OneDrive\Documentos\Electron500\Programacion\Proyectos\WebSaleCatcher\Frontend\media\firebase.jpg" alt="Firebase">
+                </div>
+                <div id="slide-2">
+                    <img src="C:\Users\joses\OneDrive\Documentos\Electron500\Programacion\Proyectos\WebSaleCatcher\Frontend\media\python.jpg" alt="Python Machine Learning">
+                </div>
+                <div id="slide-3">
+                    <img src="C:\Users\joses\OneDrive\Documentos\Electron500\Programacion\Proyectos\WebSaleCatcher\Frontend\media\docker.png" alt="Docker Enviorment">
+                </div>
+                <div id="slide-4">
+                    <img src="C:\Users\joses\OneDrive\Documentos\Electron500\Programacion\Proyectos\WebSaleCatcher\Frontend\media\cloud.jpg" alt="Google Cloud">
+                </div>
+                <div id="slide-5">
+                    <img src="C:\Users\joses\OneDrive\Documentos\Electron500\Programacion\Proyectos\WebSaleCatcher\Frontend\media\api.png" alt="Api Coach">
+                </div>
+            </div>
+            <div class="slider">
+                <a href="#slide-1">1</a>
+                <a href="#slide-2">2</a>
+                <a href="#slide-3">3</a>
+                <a href="#slide-4">4</a>
+                <a href="#slide-5">5</a>
+            </div>
+        </div>
+        <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Registrarse</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signin-form">
+                        <label for="email">Email</label>
+                        <input type="email" id="signin-email" class="form-control mb-3" placeholder="Email" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="signin-password" class="form-control mb-3" placeholder="********" required>
+                        <button type="submit" class="btn btn-primary">
+                            Registrarse
+                        </button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="login-form">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control mb-3" placeholder="Email" required>
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control mb-3" placeholder="********" required>
+                        <button type="submit" class="btn btn-primary">
+                            Iniciar Sesion
+                        </button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/acerca.js" type="module"></script>
+    </main>
+</body>
+</html>

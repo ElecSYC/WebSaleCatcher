@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSaleCatcher</title>
+    <link rel = "icon" href ="C:\Users\joses\OneDrive\Documentos\Electron500\Programacion\Proyectos\WebSaleCatcher\Frontend\media\appicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src=""></script>
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container__header">	
+            <div class="logo">WebSaleCatcher</div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="acerca.html">Acerca de</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <i class="fa-solid fa-bars" id="icon_menu"></i>
+            <div class="header__login">
+                <input type="button" class="btn__header-login" value="Iniciar Sesion" data-bs-toggle="modal" data-bs-target="#loginModal">
+            </div>
+            <div class="header__register">
+                <input type="button" class="btn__header-register" value="Registrarse" data-bs-toggle="modal" data-bs-target="#signinModal">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cover">
+            
+            <div class="text__information-cover">
+                <h1>Contacta con nuestro equipo</h1>
+                <p>WebSaleCatcher feedback:</p>
+                <p class="textocontacto">Nuestro equipo estara encantado de ayudar a resolver tus dudas; Pudes apoyarte con "Santiago" nuestro asistente virtual para resolver tus inquietudes o bien contactar directamente con nuestro equipo, que estara encantado de resolver tu pregunta.</p>
+            </div>
+            <div class="media__cover">
+                <video src="media/animacion_cover.webm" autoplay playinline loop muted preload="auto"></video>
+            </div>
+        </div>
+        <div class="container">
+            <div class="chatbox">
+                <div class="chatbox__support">
+                    <div class="chatbox__header">
+                        <div class="chatbox__image--header">
+                            <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                        </div>
+                        <div class="chatbox__content--header">
+                            <h4 class="chatbox__heading--header">Chat Support</h4>
+                            <p class="chatbox__description--header">¡Hola! Mi nombre es Santiago, Cuentame en que te puedo ayudar.</p>
+                        </div>
+                    </div>
+                    <div class="chatbox__messages">
+                        <div></div>
+                    </div>
+                    <div class="chatbox__footer">
+                        <input type="text" placeholder="Escribeme...">
+                        <button class="chatbox__send--footer send__button">Enviar</button>
+                    </div>
+                </div>
+                <div class="chatbox__button">
+                    <button><img src="C:\Users\joses\OneDrive\Documentos\Electron500\Programacion\Proyectos\WebSaleCatcher\Frontend\media\chatbox-icon.svg" /></button>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@mail.com">
+            </div>
+            <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">¿Deseas contactar con nuestro equipo directamente?</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">Escribenos...</textarea><br>
+            <button type="submit" class="btn btn-primary">
+                Enviar comentario
+            </button>
+            </div>
+        <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Registrarse</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signin-form">
+                        <label for="email">Email</label>
+                        <input type="email" id="signin-email" class="form-control mb-3" placeholder="Email" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="signin-password" class="form-control mb-3" placeholder="********" required>
+                        <button type="submit" class="btn btn-primary">
+                            Registrarse
+                        </button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="login-form">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control mb-3" placeholder="Email" required>
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control mb-3" placeholder="********" required>
+                        <button type="submit" class="btn btn-primary">
+                            Iniciar Sesion
+                        </button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="app/script.js"></script>
+        <script src="js/contacto.js" type="module"></script>
+        <script type="text/javascript" src="js/contacto.js"></script>
+    </main>
+</body>
+</html>
